@@ -1,5 +1,7 @@
 {
   "name": "DocScanner",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
