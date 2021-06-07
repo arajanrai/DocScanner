@@ -5,6 +5,17 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <div id="pdfContent">
+    <div *ngFor="let item of images">
+      <img class="docs" [src]="showImages(item)" />
+    </div>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button (click)="convertToPdf()">
+      <ion-icon name="cloud-download-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button>
       <ion-icon name="add"></ion-icon>

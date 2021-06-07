@@ -11,8 +11,11 @@ apply from: "../capacitor-cordova-android-plugins/cordova.variables.gradle"
 dependencies {
     implementation project(':capacitor-app')
     implementation project(':capacitor-browser')
+    implementation project(':capacitor-camera')
+    implementation project(':capacitor-filesystem')
     implementation project(':capacitor-haptics')
     implementation project(':capacitor-keyboard')
+    implementation project(':capacitor-storage')
     implementation "com.android.support:support-v4:27.+"
     implementation "androidx.appcompat:appcompat:1.0.0"
     implementation "com.android.support:support-v4:27.+"
